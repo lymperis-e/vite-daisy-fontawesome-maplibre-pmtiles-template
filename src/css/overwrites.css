@@ -1,0 +1,162 @@
+
+  .table :where(th, td) {
+    white-space: normal !important;
+  }
+  
+  .react-tabs__tab--selected {
+    @apply tab tab-active tab-bordered
+  }
+  
+  .btn {
+    @apply normal-case;
+  }
+  
+  .logo-loader {
+    animation-name: opacityAnimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes opacityAnimation {
+    0% {
+      opacity: 0.3;
+    }
+  
+    50% {
+      opacity: 0.9;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  .maplibregl-export-list {
+    @apply m-4 prose
+  }
+  
+  #mapbox-gl-export-page-size {
+    @apply select select-sm select-primary
+  }
+  
+  #mapbox-gl-export-page-orientation {
+    @apply select select-sm select-primary
+  }
+  
+  #mapbox-gl-export-format-type {
+    @apply select select-sm select-primary
+  }
+  
+  #mapbox-gl-export-dpi-type {
+    @apply select select-sm select-primary
+  }
+  
+  .generate-button {
+    @apply btn btn-ghost
+  }
+  
+  .maplibregl-export-contro {
+    background: url('img/print.svg') !important;
+  }
+  
+  .tremor-Card-root {
+    @apply border-none !important;
+  }
+  
+  .ring-1 {
+    --tw-ring-shadow: none !important;
+  }
+  
+  .sidebar-hidden {
+    display: none;
+  }
+  
+  .rct-node-parent {
+    @apply mb-10
+  }
+  
+  .rct-title {
+    @apply m-2 mb-0;
+  }
+  
+  .react-checkbox-tree label {
+    padding: 10px;
+    margin-left: 0px;
+    @apply w-full
+  }
+  
+  .react-checkbox-tree label:hover {
+    @apply rounded-lg
+  }
+  
+  /*
+  .mapboxgl-ctrl-group, .maplibregl-ctrl-group{
+    background: none;
+    border: none; 
+  }
+  .mapboxgl-ctrl-group button, .maplibregl-ctrl-group button{
+    @apply btn;
+    @apply  shadow shadow-lg border border-gray-500 rounded-lg p-1 text-white;
+  }
+  .mapboxgl-ctrl-group button, .maplibregl-ctrl-group button:focus{
+    @apply rounded-lg outline-1
+  }
+  */
+  
+  .mapboxgl-map, .maplibregl-map {
+    font-family: inherit !important
+  }
+  
+  .maplibregl-ctrl-top-right{
+    display: none !important;
+  }
+  
+  .maplibregl-ctrl-bottom-right {
+    display: flex !important;
+    flex-direction: row !important;
+    @apply items-end
+  }
+  .maplibregl-ctrl-bottom-left {
+    display: flex !important;
+    flex-direction: row !important;
+    @apply items-end
+  }
+  
+  .mapboxgl-popup,
+  .maplibregl-popup {
+    @apply bg-white rounded-lg border-gray-500 shadow-lg p-2;
+  }
+  
+  .mapboxgl-popup-content,
+  .maplibregl-popup-content {
+    background: none;
+    box-shadow: none;
+    padding: 0px;
+    @apply px-1 py-2;
+  }
+  
+  .mapboxgl-popup-close-button,
+  .maplibregl-popup-close-button {
+    @apply btn rounded-full btn-sm btn-secondary m-1;
+  }
+  
+  .maplibregl-popup-tip {
+    display: none;
+  }
+  
+  .hover-popup {
+    @apply font-bold bg-white rounded-lg shadow-lg p-2;
+  }
+  
+  
+  .tremor-BarList-labelText.whitespace-nowrap.truncate.text-gray-700.text-sm{
+    @apply prose;
+  }
+  
+  .tremor-BarList-barLink.whitespace-nowrap.truncate.text-blue-500.no-underline.hover\:underline.visited\:text-blue-500.text-sm{
+    @apply prose link;
+  }
+  .tremor-BarList-bar{
+    @apply bg-secondary;
+  }

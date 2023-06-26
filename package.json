@@ -1,0 +1,37 @@
+{
+  "name": "vite-react-daisy-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "daisyui": "^2.51.3",
+    "pmtiles": "^2.7.2",
+    "protomaps-themes-base": "^1.3.0",
+    "maplibre-gl": "^3.1.0",
+    "react": "^18.2.0",
+    "react-daisyui": "^3.0.3",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  }
+}

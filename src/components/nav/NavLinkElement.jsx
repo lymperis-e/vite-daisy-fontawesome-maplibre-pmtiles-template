@@ -1,0 +1,23 @@
+import "../../css/components/action.css"
+import { NavLink } from "react-router-dom"
+
+function NavLinkElement({ children, ...rest }) {
+    return (
+        <>
+
+        {/* Small Screens */}
+        <NavLink className=" flex md:hidden btn btn-ghost tooltip tooltip-top tooltip-accent mx-auto text-2xl before:w-[7rem] before:content-[attr(data-tip)]" {...rest}>
+            {children}
+        </NavLink>
+
+        {/* Medium Screens */}
+        <NavLink className="nav-link hidden md:block btn-link tooltip tooltip-bottom tooltip-accent mr-4 ml-0 text-base " {...rest}>
+            {children}
+        </NavLink>
+
+        </>
+
+    )
+}
+
+export default NavLinkElement

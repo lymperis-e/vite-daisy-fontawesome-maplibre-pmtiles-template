@@ -1,0 +1,8 @@
+.btn-action{
+    cursor: pointer;
+    transition: all .9s;
+}
+.btn-action:hover{
+    opacity: .6;
+}
+
