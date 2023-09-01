@@ -1,5 +1,5 @@
 import React from 'react'
-import MapComponent from '../map/MapComponent'
+import MapComponent from '../components/map/MapComponent'
 
 function MapLayout() {
   return (

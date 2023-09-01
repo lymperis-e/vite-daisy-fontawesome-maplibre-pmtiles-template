@@ -1,29 +1,33 @@
 import { HashRouter, Routes, Route } from "react-router-dom"
-import NavbarComponent from "./components/nav/NavbarComponent"
+import { PageLayout } from '@/layout/PageLayout'
 
-import Home from './routes/Home'
-import Map from "./routes/Map"
+import { AuthProvider } from "./context/AuthContext"
+import { MapProvider } from "./context/MapContext"
+import {DataProvider} from "./context/DataContext"
+
+
+import Home from '@/routes/Home'
+import Map from "@/routes/Map"
 
 function App() {
 
   return (
-
     <>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<NavbarComponent />}>
-
-            <Route index element={<Home />} />
-            <Route path="/map" element={<Map />} />
-            
-            {/*<Route  path="/contact" element={<Contact />} />*/}
-
-          </Route>
-        </Routes>
-      </HashRouter>
-      {/*<FooterComponent/>*/}
+      <AuthProvider>
+        <DataProvider>
+        <MapProvider>
+          <HashRouter>
+            <Routes>
+              <Route path="/" element={<PageLayout />}>
+                <Route index element={<Home />} />
+                <Route path="/map" element={<Map />} />
+              </Route>
+            </Routes>
+          </HashRouter>
+        </MapProvider>
+        </DataProvider>
+      </AuthProvider>
     </>
-
   )
 }
 

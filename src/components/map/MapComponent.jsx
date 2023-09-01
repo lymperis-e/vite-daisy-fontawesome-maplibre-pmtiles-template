@@ -4,7 +4,7 @@ import * as pmtiles from 'pmtiles';
 import { mapStyle } from './config/style';
 import "../../../node_modules/maplibre-gl/dist/maplibre-gl.css"
 
-import { MapContext } from '../context/MapContext';
+import { MapContext } from '@/context/MapContext';
 
 let protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
