@@ -8,7 +8,7 @@ function NavbarComponent ({ children }) {
         <>
 
             {/* Medium screens: top navbar */}
-            <div className="z-40 hidden md:flex w-full bg-gray-800 bg-opacity-0 hover:bg-opacity-100 hover:text-white hover:shadow-lg transition-all duration-700 items-center justify-center gap-2 font-sans fixed top-[0]  ">
+            <div className="z-40 hidden md:flex w-full bg-base-100 bg-opacity-0 hover:bg-opacity-100 hover:text-white hover:shadow-lg transition-all duration-700 items-center justify-center gap-2 font-sans fixed top-[0]  ">
                 <Navbar >
                     <Navbar.Start>
                         {children}

@@ -47,7 +47,7 @@ function SidebarLogo ({ expanded }) {
     return (
             <Logo link='/'>
                 <img src={LogoImg} alt="" className="w-10  inline" />
-                <span>ChargingCost</span>
+                <span>ReactApp</span>
             </Logo>
     )
   }

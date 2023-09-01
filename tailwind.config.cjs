@@ -22,10 +22,10 @@ module.exports = {
     themes: [
       {
         "black": {
-          primary: "#111827", // 9c2b40
-          secondary: "#209fb5", // ea76cb 
-          accent: "#ea76cb", // teal
-          neutral: "#dce0e8", // crust
+          primary: "#172d5e", // 9c2b40
+          secondary: "#3b20b5", // ea76cb 
+          accent: "#eabe76", // teal
+          neutral: "#b2a981", // crust
           "base-100": "#eff1f5", // base
           info: "#209fb5", // sapphire
           success: "#40a02b", // green

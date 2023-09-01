@@ -26,7 +26,7 @@ function PageLayout() {
             </NavbarComponent>
 
             {/* Sidebar */}
-            <div className={`flex flex-col bg-gray-800 p-2 gap-3 text-white transition-all z-50 shadow-2xl flex-shrink-0 ${sidebarOpen ? 'w-60' : 'w-16'}`}
+            <div className={`flex flex-col bg-base-100 p-2 gap-3 text-white transition-all z-50 shadow-2xl flex-shrink-0 ${sidebarOpen ? 'w-60' : 'w-16'}`}
             >
                 <SidebarContent expanded={sidebarOpen}>
                 </SidebarContent>
