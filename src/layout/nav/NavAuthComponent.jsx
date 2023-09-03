@@ -62,7 +62,7 @@ function NavAuthComponent({ expanded }) {
             return (
                 <>
                     <div className=" w-full dropdown dropdown-top md:dropdown-right dropdown-end">
-                        <label tabIndex={0} className="btn btn-ghost w-full rounded-lg avatar text-secondary ">
+                        <label tabIndex={0} className="btn btn-ghost w-full rounded-lg avatar ">
                             {avatar()}
                         </label>
                         <ul tabIndex={0} className="my-3 p-2 shadow menu menu-compact dropdown-content rounded-box bg-primary  w-72">

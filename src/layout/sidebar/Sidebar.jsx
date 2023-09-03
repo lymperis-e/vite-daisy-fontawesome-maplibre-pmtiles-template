@@ -46,8 +46,8 @@ function SidebarLogo ({ expanded }) {
   const expandedContent = () => {
     return (
             <Logo link='/'>
-                <img src={LogoImg} alt="" className="w-10  inline" />
-                <span>ReactApp</span>
+                <img src={LogoImg} alt="" className="w-32  inline" />
+                <span></span>
             </Logo>
     )
   }
@@ -66,7 +66,7 @@ function SidebarContent ({ expanded, children, ...rest }) {
             {children}
             <SidebarLogo expanded={expanded} />
 
-            <div className='flex flex-col gap-4 h-full mt-1 pt-4 border-t border-base-300 '>
+            <div className='flex flex-col gap-4 h-full mt-1 pt-4 border-t border-base-300 text-black'>
                 Test
             </div>
 

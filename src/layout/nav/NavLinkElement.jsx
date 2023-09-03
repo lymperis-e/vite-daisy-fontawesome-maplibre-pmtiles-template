@@ -11,7 +11,7 @@ function NavLinkElement ({ children, ...rest }) {
         </NavLink>
 
         {/* Medium Screens */}
-        <NavLink className="nav-link hidden md:block btn-link tooltip tooltip-bottom mr-4 ml-0 text-base " {...rest}>
+        <NavLink className="nav-link hidden md:block btn-link tooltip tooltip-bottom mr-4 ml-0 " {...rest}>
             {children}
         </NavLink>
 

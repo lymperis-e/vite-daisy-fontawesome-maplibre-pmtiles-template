@@ -7,13 +7,13 @@ function Home() {
 
     <RouteBase>
       <div className=" min-h-screen">
-        <header className="bg-base-300 ">
+        <header className=" ">
           <div className="container mx-auto py-4 px-6">
             <h1 className="text-2xl font-bold">My Landing Page</h1>
           </div>
         </header>
         <main>
-          <section className="bg-base-300 py-12">
+          <section className=" py-12">
             <div className="container mx-auto px-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>

@@ -7,7 +7,7 @@ function Logo(props) {
 
     return (
         <>
-            <NavLink to={link} className="app-logo" {...restAttrs} >
+            <NavLink to={link} className="" {...restAttrs} >
                 <h1 className='text-xl' >
                     {children}
                 </h1>
