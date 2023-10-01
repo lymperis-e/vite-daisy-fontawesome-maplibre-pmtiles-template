@@ -10,25 +10,25 @@ import { faUserSlash, faSignOut, faUser, faScrewdriverWrench } from '@fortawesom
 import { AuthContext } from '@/context/AuthContext'
 import { SidebarItem } from '@/layout/sidebar/Sidebar'
 
-function NavAuthComponent({ expanded }) {
-    const { user } = useContext(AuthContext) || null
-    const dropdownRef = useRef(null)
+function NavAuthComponent ({ expanded }) {
+  const { user } = useContext(AuthContext) || null
+  const dropdownRef = useRef(null)
 
-    const avatar = () => {
-        return (
-            user ?
-                (
+  const avatar = () => {
+    return (
+      user
+        ? (
                     <>
                         {expanded ? <span>{user?.username} &nbsp;</span> : null}
                         <FontAwesomeIcon className="" icon={faUser} />
                     </>
-                )
-                : null
-        )
-    }
+          )
+        : null
+    )
+  }
 
-    const menuItems = () => {
-        return (
+  const menuItems = () => {
+    return (
             <>
                 <li>
                     <NavLink to="/user-profile" className='text-left' >
@@ -54,12 +54,12 @@ function NavAuthComponent({ expanded }) {
                     </button>
                 </li>
             </>
-        )
-    }
+    )
+  }
 
-    const fullComponent = () => {
-        if (user?.isAuthenticated) {
-            return (
+  const fullComponent = () => {
+    if (user?.isAuthenticated) {
+      return (
                 <>
                     <div className=" w-full dropdown dropdown-top md:dropdown-right dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost w-full rounded-lg avatar ">
@@ -70,26 +70,26 @@ function NavAuthComponent({ expanded }) {
                         </ul>
                     </div>
                 </>
-            )
-        }
+      )
+    }
 
-        return (
+    return (
             <Menu horizontal className="p-0 tooltip tooltip-right" data-tip="Σύνδεση">
                 <NavbarElement to="login" className="btn btn-ghost btn-circle">
                     <FontAwesomeIcon icon={faUserSlash} />
                 </NavbarElement>
             </Menu>
-        )
-    }
+    )
+  }
 
-    return (
+  return (
         <SidebarItem
             expanded={expanded}
             minimizedContent={fullComponent()}
             tooltip={null}>
             {fullComponent()}
         </SidebarItem>
-    )
+  )
 }
 
 export default NavAuthComponent

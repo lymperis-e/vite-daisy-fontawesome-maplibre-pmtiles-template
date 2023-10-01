@@ -1,16 +1,15 @@
-import { HashRouter, Routes, Route } from "react-router-dom"
+import React from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { PageLayout } from '@/layout/PageLayout'
 
-import { AuthProvider } from "./context/AuthContext"
-import { MapProvider } from "./context/MapContext"
-import {DataProvider} from "./context/DataContext"
-
+import { AuthProvider } from './context/AuthContext'
+import { MapProvider } from './context/MapContext'
+import { DataProvider } from './context/DataContext'
 
 import Home from '@/routes/Home'
-import Map from "@/routes/Map"
+import Map from '@/routes/Map'
 
-function App() {
-
+function App () {
   return (
     <>
       <AuthProvider>

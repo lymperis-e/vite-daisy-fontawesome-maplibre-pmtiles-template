@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { RegularUserLinks } from './AuthenticatedLinks'
 
-function NavLinks() {
-    return (
+function NavLinks () {
+  return (
         <>
             <NavLinkElement data-tip="Χάρτης" to="/map">
                 <FontAwesomeIcon icon={faCompass} />
@@ -17,7 +17,7 @@ function NavLinks() {
 
             <RegularUserLinks />
         </>
-    )
+  )
 }
 
 export default NavLinks

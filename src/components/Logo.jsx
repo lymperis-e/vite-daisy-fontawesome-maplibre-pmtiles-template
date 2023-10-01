@@ -1,11 +1,11 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 
-function Logo(props) {
-    const { children, ...attrs } = props;
-    const { link, text, ...restAttrs } = attrs;
+function Logo (props) {
+  const { children, ...attrs } = props
+  const { link, text, ...restAttrs } = attrs
 
-    return (
+  return (
         <>
             <NavLink to={link} className="" {...restAttrs} >
                 <h1 className='text-xl' >
@@ -13,7 +13,7 @@ function Logo(props) {
                 </h1>
             </NavLink>
         </>
-    )
+  )
 }
 
 export default Logo

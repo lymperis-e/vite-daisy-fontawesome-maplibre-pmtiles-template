@@ -16,4 +16,4 @@ function Logo (props) {
   )
 }
 
-export {Logo}
+export { Logo }

@@ -2,7 +2,7 @@ import React from 'react'
 import RouteBase from './RouteBase'
 import MapLayout from '@/layout/MapLayout'
 
-function Map() {
+function Map () {
   return (
         <MapLayout></MapLayout>
   )

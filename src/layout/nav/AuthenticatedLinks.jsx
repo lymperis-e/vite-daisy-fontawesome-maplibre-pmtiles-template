@@ -13,7 +13,6 @@ function PrivilegedUserLinks () {
 }
 
 function RegularUserLinks () {
-
   return (
         <>
         </>

@@ -1,23 +1,21 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from 'react'
 
 // Create a context to share data globally
-const DataContext = createContext(null);
+const DataContext = createContext(null)
 const DataProvider = (props) => {
-    const [dataLoading, setDataLoading] = useState(false);
-
+  const [dataLoading, setDataLoading] = useState(false)
 
   // Create the context value object
   const contextValue = {
-    dataLoading,
-    }
+    dataLoading
+  }
 
   return (
     <DataContext.Provider value={contextValue}>
       {props.children}
     </DataContext.Provider>
-  );
-};
+  )
+}
 
-
-export default DataProvider;
-export { DataContext, DataProvider };
+export default DataProvider
+export { DataContext, DataProvider }

@@ -1,23 +1,23 @@
-import {useState} from 'react'
-import NavbarComponent from "@/layout/nav/NavbarComponent"
-import {SidebarContent, SidebarToggle} from "@/layout/sidebar/Sidebar"
-import LoaderTop from "@/components/common/LoaderTop"
-import { Outlet } from "react-router-dom"
+import { useState } from 'react'
+import NavbarComponent from '@/layout/nav/NavbarComponent'
+import { SidebarContent, SidebarToggle } from '@/layout/sidebar/Sidebar'
+import LoaderTop from '@/components/common/LoaderTop'
+import { Outlet } from 'react-router-dom'
 
-function PageLayout() {
-    const [sidebarOpen, setSidebarOpen] = useState(true)
+function PageLayout () {
+  const [sidebarOpen, setSidebarOpen] = useState(true)
 
-    const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen)
-    }
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen)
+  }
 
-    return (
+  return (
         <div className="flex h-screen bg-gray-100">
 
             {/* Content Section */}
 
             <LoaderTop />
-            
+
             {/* Navbar */}
             <NavbarComponent>
                 <div className={`pl-1  ${sidebarOpen ? 'ml-60' : 'ml-16'} `}>
@@ -39,7 +39,7 @@ function PageLayout() {
             </div>
 
         </div>
-    )
+  )
 }
 
-export {PageLayout}
+export { PageLayout }

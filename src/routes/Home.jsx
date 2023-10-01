@@ -2,7 +2,7 @@ import React from 'react'
 import RouteBase from './RouteBase'
 import { Button } from 'react-daisyui'
 
-function Home() {
+function Home () {
   return (
 
     <RouteBase>
